@@ -28,7 +28,7 @@ export const AddTransaction = () => {
                     <input
                         type='text'
                         value={text}
-                        onChange={() => setText(e.target.value)}
+                        onChange={(e) => setText(e.target.value)}
                         placeholder='Enter text...'
                     />
                 </div>
@@ -40,7 +40,7 @@ export const AddTransaction = () => {
                     <input
                         type='number'
                         value={amount}
-                        onChange={() => setAmount(e.target.value)}
+                        onChange={(e) => setAmount(e.target.value)}
                         placeholder='Enter amount...'
                     />
                 </div>
