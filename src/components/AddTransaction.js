@@ -16,7 +16,7 @@ export const AddTransaction = () => {
             amount: +amount,
         };
 
-        addTransaction(newTransaction);
+        if (newTransaction.amount != 0) addTransaction(newTransaction);
     };
 
     return (
